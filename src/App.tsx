@@ -1,10 +1,12 @@
-import { Home } from "./pages/Home";
+// import { Home } from "./pages/Home";
+import { NewRoom } from "./pages/newRoom";
 
 function App() {
 
   return (
     <>
-      <Home />
+      {/* <Home /> */}
+      <NewRoom />
     </>
   );
 }
