@@ -1,0 +1,3 @@
+--> yarn create react-app letmeaskreact --template typescript
+--> yarn add firebase
+--> yarn add node-sass@^5.0.0   (para especificar a versão)
