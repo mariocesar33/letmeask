@@ -11,7 +11,7 @@ import "../styles/auth.scss";
 export function Home() {
   const history = useHistory();
 
-  function navigateToNewRoom() {
+  function handleCreateRoom() {
     history.push("/rooms/new")
   }
 
@@ -25,7 +25,7 @@ export function Home() {
       <main>
         <div className="main-content">
           <img src={logoImg} alt="letmeask logotipo" />
-          <button className="create-room" onClick={navigateToNewRoom}>
+          <button className="create-room" onClick={handleCreateRoom}>
             <img src={googleIconImg} alt="logo do google" />
             Craia sua sala com o google
           </button>
