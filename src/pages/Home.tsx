@@ -1,4 +1,3 @@
-import { useContext } from "react";
 import { useHistory } from "react-router-dom";
 
 import { firebase, auth } from "../services/firebase";
@@ -9,14 +8,11 @@ import googleIconImg from "../assets/images/google-icon.svg";
 
 import { Button } from '../components/Button';
 
-import { TestContext } from "../App";
-
 import "../styles/auth.scss";
 
 export function Home() {
   const history = useHistory();
   
-  const {value, setValue} = useContext(TestContext); 
 
   function handleCreateRoom() {
     const provider = new firebase.auth.GoogleAuthProvider();
@@ -36,7 +32,6 @@ export function Home() {
         <p>Tire as dúvidas da sua audiência em tempo-real</p>
       </aside>
       <main>
-        <h1>{value}</h1>
         <div className="main-content">
           <img src={logoImg} alt="letmeask logotipo" />
           <button className="create-room" onClick={handleCreateRoom}>
